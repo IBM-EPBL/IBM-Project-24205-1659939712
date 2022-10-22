@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+
+{% block body %}
+
+{{ msg }}
+
+<table border="1">
+    <thead>
+        <td>Name</td>
+        <td>Address</td>
+        <td>City</td>
+        <td>Pincode</td>
+    </thead>
+
+    {% for row in persons %}
+    <tr>
+        <td>{{row["name"]}}</td>
+        <td>{{row["addr"]}}</td>
+        <td>{{row["city"]}}</td>
+        <td>{{row["pin"]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
