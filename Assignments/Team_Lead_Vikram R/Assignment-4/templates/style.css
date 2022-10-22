@@ -1,0 +1,17 @@
+body{
+    background-color: lightblue;
+    margin: 5%;
+}
+
+h3{
+    color: #3d0a1a;
+    text-align: center;
+    align-items: center;
+}
+
+.imgdiv{
+width: 200px;
+height: 200px;
+border: 2px #3d0a1a solid;
+margin: 3px;
+}
