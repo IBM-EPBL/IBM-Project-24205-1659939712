@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/locationList_linearLayout"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/record_view_background"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/locationList_locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/ic_map"
+        android:drawablePadding="3.5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Location"
+        android:textColor="#00E676"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/locationList_dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_date_time"
+        android:drawablePadding="3.5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Date, Time"
+        android:textColor="#00E676"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/locationList_verifiedCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_warning"
+        android:drawablePadding="3dp"
+        android:fontFamily="@font/roboto"
+        android:text="Infected Verified: 0"
+        android:textColor="#FF1744"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/locationList_unverifiedCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_warning"
+        android:drawablePadding="3dp"
+        android:fontFamily="@font/roboto"
+        android:text="Infected Unverified: 0"
+        android:textColor="#FF1744"
+        android:textSize="15sp" />
+
+
+</LinearLayout><?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/locationList_linearLayout"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/record_view_background"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/locationList_locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/ic_map"
+        android:drawablePadding="3.5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Location"
+        android:textColor="#00E676"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/locationList_dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_date_time"
+        android:drawablePadding="3.5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Date, Time"
+        android:textColor="#00E676"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/locationList_verifiedCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_warning"
+        android:drawablePadding="3dp"
+        android:fontFamily="@font/roboto"
+        android:text="Infected Verified: 0"
+        android:textColor="#FF1744"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/locationList_unverifiedCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_warning"
+        android:drawablePadding="3dp"
+        android:fontFamily="@font/roboto"
+        android:text="Infected Unverified: 0"
+        android:textColor="#FF1744"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

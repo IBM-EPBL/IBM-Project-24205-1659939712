@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.UserInfoFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:background="@color/color_top_part_background">
+
+            <include
+                layout="@layout/toolbar_user_info_form_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_user_info_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="@android:integer/config_mediumAnimTime"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Complete User Profile"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#031739"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/roboto"
+                android:text="You must have to provide accurate information"
+                android:textAlignment="center"
+                android:textColor="#010E55"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="1dp"
+                android:text="Please provide them below"
+                android:textAlignment="center"
+                android:textColor="#010E55"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/ic_fullname"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/full_name_hint"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/color_user_info_edit_text" />
+
+
+            <TextView
+                android:id="@+id/homeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/ic_home_address"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:clickable="false"
+                android:hint="@string/home_address_hint"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="18.2sp"
+                android:textColorHint="@color/color_user_info_edit_text"
+                />
+
+            <TextView
+                android:id="@+id/workAdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/ic_work_address"
+                android:drawablePadding="4.5dp"
+                android:ems="10"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="18.2sp"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/work_address_hint"
+                android:textColorHint="@color/color_user_info_edit_text" />
+
+
+            <EditText
+                android:id="@+id/dateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/dob_hint"
+                android:inputType="date"
+                android:textColorHint="@color/color_user_info_edit_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="50dp"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/SaveProfButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_save_button"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingStart="50dp"
+                    android:paddingTop="18dp"
+                    android:paddingEnd="50dp"
+                    android:paddingBottom="18dp"
+                    android:text="@string/save_button_text"
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

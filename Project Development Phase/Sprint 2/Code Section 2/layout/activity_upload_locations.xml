@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.UploadLocationsActivity">
+    <include layout="@layout/toolbar_upload_locations"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/color_top_part_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_upload_locations" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginBottom="15dp"
+                android:text="Thank You For Helping The Community"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#031739"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="You Are A Hero!"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#031739"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/upload_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:background="@drawable/custom_save_button"
+                android:fontFamily="@font/roboto_medium"
+                android:onClick="uploadClicked"
+                android:text="Upload My Locations"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/uploadProgressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/loading_progressbar_text"
+                android:textAlignment="center"
+                android:textColor="#606060"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/uploadProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

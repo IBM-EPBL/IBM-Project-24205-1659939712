@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F6F6"
+    tools:context=".activities.MenuActivity">
+
+    <include layout="@layout/toolbar_menu"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/buttonProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/ic_userprofile"
+                android:text="Profile" />
+
+            <Button
+                android:id="@+id/buttonTrackedLocations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/ic_trackedlocation"
+                android:drawablePadding="5dp"
+                android:onClick="startMyLocationsMap"
+                android:padding="10dp"
+                android:text="Tracked Locations" />
+
+            <Button
+                android:id="@+id/buttonNewsFeed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/newsfeed"
+                android:onClick="startNewsFeed"
+                android:text="News Feed" />
+
+            <Button
+                android:id="@+id/buttonMatchedLocations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/ic_locations"
+                android:onClick="showMatchedLocationsClick"
+                android:text="matched locations" />
+
+            <Button
+                android:id="@+id/buttonUploadLocations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/ic_upload"
+                android:onClick="uploadClick"
+                android:text="Upload" />
+
+            <Button
+                android:id="@+id/buttonSettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/menu_button"
+                android:drawableTop="@drawable/settings"
+                android:onClick="openSettingsClick"
+                android:text="Settings" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EAEAEA"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_username_comment_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:drawableStart="@drawable/ic_user_small"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="User Name"
+                android:textColor="@color/color_user_name_feed"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/comment_view_author_title"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:visibility="invisible"
+                android:textSize="12sp"
+                android:textColor="#808080"
+                android:text="(Author)" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView_DatenTime_comment_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Today, 12 PM"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="#EE171717"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_comment_view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:orientation="vertical"
+        android:background="#00E676"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/roboto"
+            android:text="Comment Body"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:textSize="15sp"
+            android:textColor="#606060"
+            android:minLines="2">
+        </TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_end_line"/>
+
+
+
+</LinearLayout>

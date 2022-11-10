@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TrackerSettingsActivity">
+    <include layout="@layout/toolbar_settings"/>
+
+    <Switch
+        android:id="@+id/notification_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="@string/tracker_Notification_Label"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_location_track_24dp"
+        android:drawablePadding="8dp"/>
+</LinearLayout>

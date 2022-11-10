@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_comment_feed"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EAEAEA"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView_username_comment_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="User Name"
+            android:textColor="@color/color_user_name_feed"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_DatenTime_comment_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Today, 12 PM"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relief_line_commentfeed"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_yellow_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/description_Text_comment_feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/roboto"
+            android:text="Description"
+            android:paddingTop="8dp"
+            android:maxLines="5"
+            android:minLines="4"
+            android:textColor="#606060"
+            android:scrollbars="vertical"
+            android:paddingBottom="8dp"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:textSize="18sp"
+            android:minHeight="100dp">
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_end_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/color_user_name_feed">
+
+        <TextView
+            android:id="@+id/comment_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Comments"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_comment_feed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton_comment_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="18dp"
+            android:src="@drawable/ic_comment"
+            app:backgroundTint="#FF1744" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

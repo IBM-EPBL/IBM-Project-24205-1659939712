@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:background="@color/color_top_part_background">
+
+            <include
+                layout="@layout/toolbar_signup_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_phone_no_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="@android:integer/config_mediumAnimTime"
+        android:scrollbarAlwaysDrawVerticalTrack="true">>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Register Mobile Number"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#031739"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/roboto"
+                android:text="You must have to register your mobile number"
+                android:textAlignment="center"
+                android:textColor="#010E55"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/roboto"
+                android:text="Please insert mobile number below"
+                android:textAlignment="center"
+                android:textColor="#010E55"
+                android:layout_marginTop="1dp"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_phoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/phone_number_textbox"
+                    android:drawablePadding="-25dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:paddingStart="5dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="6dp"
+                    android:text="+880 "
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@drawable/edit_text_small_cursor"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextViewTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:enabled="false"
+                android:text="Before proceeding, read the terms &amp; conditons"
+                android:textAlignment="center"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#2979FF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/verification_page_button"
+                    android:backgroundTint="#FF1744"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="20dp"
+                    android:paddingStart="35dp"
+                    android:paddingEnd="35dp"
+                    android:text="Continue"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
