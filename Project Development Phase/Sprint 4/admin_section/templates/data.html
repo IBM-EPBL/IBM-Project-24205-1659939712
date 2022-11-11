@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <style>
+        body {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: #699cc5;
+        }
+
+        a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m-4 container">
+        <h1><u>Location data and Visited People</u></h1>
+    </div>
+    <div class="m-4 container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Latitude</th>
+                    <th scope="col">Longitude</th>
+                    <th scope="col">No_Visited</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {%- for row in responses %}
+                <tr>
+                    <th scope="row">{{loop.index}}</th>
+                    <td>{{row[1]}}</td>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[3]}}</td>
+                </tr>
+                {%- endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="m-3 float-right">
+        <button type="button" class="btn btn-danger"><a href={{url_for("home")}}>Go to location update Page</a></button>
+    </div>
+
+</body>
+
+</html>
