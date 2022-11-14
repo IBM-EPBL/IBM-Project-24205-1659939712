@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=B1:DD:3B:DB:02:A5:3E:80:C4:C4:94:C3:BF:3A:B7:B3:32:B2:A9:98%3Bcom.example.covid_19alertapp.activities
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.covid_19alertapp.activities
+
+    SHA-1 certificate fingerprint:
+    B1:DD:3B:DB:02:A5:3E:80:C4:C4:94:C3:BF:3A:B7:B3:32:B2:A9:98
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyARHEb2AmwSZfdLyX4jsD7DeV_NOnPZDM8
+    </string>
+</resources>
