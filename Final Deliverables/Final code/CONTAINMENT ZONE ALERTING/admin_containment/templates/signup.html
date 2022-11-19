@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Sign Up</title>
+</head>
+
+<body class="text-center">
+    {% if error %}
+    <script>
+        alert("Email id already exists in the database");
+    </script>
+    {% endif %}
+    <form class="form-login" method="POST" action="/signup">
+        <h1 class="h3 mb-3 font-weight-normal">Sign Up to create an account with us</h1>
+        <label for="name" class="sr-only">Email address</label>
+        <input type="text" name="name" class="form-control" placeholder="Name" required autofocus />
+        <label for="email" class="sr-only">Email address</label>
+        <input type="email" name="email" class="form-control" placeholder="Email address" required />
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" class="form-control" placeholder="Password" name="password" required />
+        <button type="submit" class="btn btn-lg btn-primary btn-block mt-3">
+            Signup
+        </button>
+        <a href={{url_for("login")}}>Already have an account ... Login</a>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

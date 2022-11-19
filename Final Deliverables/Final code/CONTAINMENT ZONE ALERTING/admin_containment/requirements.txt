@@ -1,0 +1,5 @@
+flask
+bcrypt == 3.1.1
+flask_mysqldb
+gunicorn==19.9.0
+sendgrid
