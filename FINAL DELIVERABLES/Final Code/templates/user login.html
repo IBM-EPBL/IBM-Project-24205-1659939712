@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>CONTAINMENT ZONE ALERTING APPLICATION</title>
+        <link href="https://mani07.s3.jp-tok.cloud-object-storage.appdomain.cloud/login.css" rel="stylesheet"/>
+    </head>
+    <body> 
+        <h2 style="margin-left: 500px;">USER LOGIN PAGE <button style="margin-left: 350px;">
+            <a href="/"style="text-decoration: none;">HOME</a>
+        </button> </h2>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <p style="line-height:3.5em;"></p>
+			        <input type="text" placeholder="Name" />
+			        <input type="email" placeholder="Email" />
+                    <input type="number" placeholder="Mobile number" />
+			        <input type="password" placeholder="Password" /><i class="bi bi-eye-slash" id="togglePassword"></i><br><br>
+			        <button>Sign Up</button>
+                    <p>GO TO SIGN IN</p>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <link rel="stylesheet" href="F:\ibm\sprint\sprint 1 duplicate\login\css\login3.css">
+                    <h1>SIGN IN</h1>
+                    <p style="line-height:3.5em;"></p>
+			        <input type="email" placeholder="Email" />
+			        <input type="password" placeholder="Password" />
+                    <i class="bi bi-eye-slash" id="togglePassword"></i><br><br>
+			        <a href="#">Forgot your password?</a>
+			        <button>
+                        <a href="/s2">
+                        Sign In</a></button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+				        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, User!</h1>
+				        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script src="https://mani07.s3.jp-tok.cloud-object-storage.appdomain.cloud/login3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="./mobilecallmail.js"></script>
+    </body>
+</html>
