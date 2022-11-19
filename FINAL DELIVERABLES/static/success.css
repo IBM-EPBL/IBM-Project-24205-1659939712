@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(242, 243, 246);
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul li {
+    text-align: center;
+    background-color: rgb(18, 18, 246);
+    box-sizing: border-box;
+    width: 15em;
+    height: 3em;
+    font-size: 20px;
+    list-style: none;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    box-shadow: 0 0 1em rgba(0,0,0,0.2);
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 3em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+

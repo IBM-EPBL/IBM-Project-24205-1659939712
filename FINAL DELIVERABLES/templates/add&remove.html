@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>CONTAINMENT ZONES</title>
+   
+        <link href="https://mani07.s3.jp-tok.cloud-object-storage.appdomain.cloud/login.css" rel="stylesheet"/>
+    </head>
+    <body> 
+
+        <h2>ADD/REMOVE ZONE</h2>
+        
+        <a href="/"style="text-decoration: none;position: absolute; top: 10px; right: 20px; background-color: blue; color: white; padding: 5px 20px; border-radius: 5px;">HOME</a>
+            <div class="bg-1"></div>  
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                   
+                    <h1>ZONE DETAILS</h1>
+                    <p style="line-height:3.5em;"></p>
+			        <input type="text" placeholder="DISTRICT NAME" />
+			        <input type="text" placeholder="AREA NAME" />
+                    <input type="number" placeholder="PIN CODE" />
+                    <input type="number" placeholder="TODAY CASES" />
+                    <form action="/action_page.php">
+                        <label for="Type">Zone Type:</label>
+                        <select id="Zone Type" name="ZONE TYPE">
+                          <option value="volvo">RED</option>
+                          <option value="saab">YELLOW</option>
+                          <option value="mercedes">GREEN</option>
+                        </select>
+                       <p>  </p>
+			        <button> <a href="/zone">UPDATE</a></button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <link rel="stylesheet" href="F:\ibm\sprint\sprint 1 duplicate\login\css\login3.css">
+                    <h1>REMOVE ZONE</h1>
+                    <p style="line-height:3.5em;"></p>
+			        <input type="text" placeholder="DISTRICT NAME" />
+			        <input type="text" placeholder="AREA NAME" />
+                    <input type="number" placeholder="PIN CODE" />
+                       <button><a href="/remove">
+                        REMOVE</a></button> 
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>UPDATING CONTAINMENT ZONES!</h1>
+                        <p>To keep the containment zones current data...</p>
+				        <button class="ghost" id="signIn" >REMOVE ZONE</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>UPDATING CONTAINMENT ZONES!</h1>
+				        <p>To keep the containment zones current data...</p>
+                        <button class="ghost" id="signUp">
+                       ADD ZONE</a></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script src="https://mani07.s3.jp-tok.cloud-object-storage.appdomain.cloud/login3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="./mail.js"></script>
+    </body>
+    
+</html>

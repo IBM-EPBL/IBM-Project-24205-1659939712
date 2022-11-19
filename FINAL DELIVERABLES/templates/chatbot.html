@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>CHATBOT</title>
+        <style>
+            body{
+                background-color:  white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            img{
+                width: 200px; 
+                height: 100px;
+                margin-left: 10px;
+            }
+            h2{
+                text-align:center;
+                color:black;
+                font-size:4pc;
+            }
+            h3{
+                text-align:center;
+                color:black;
+                font-size:2.5pc;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="margin-left: 500px;">CHATBOT SERVICE<button style="margin-left: 350px;">
+            <a href="/service"style="text-decoration: none;position: absolute; top: 20px; right: 40px; background-color: blue; color: white; padding: 8px 20px; border-radius: 5px;">HOME</a>
+            <div class="bg-1"></div>
+        </button></h2>
+        <p><h3></h3>
+     </p>
+         <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "4f8894e3-1817-41e3-bf8b-a5d4b9b2197a", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "ba115cc6-e2d6-4d6b-beea-74977285d64c", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+    </body>
+</html>
